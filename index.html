@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>黄双婷-主页</title>
+
+	<!-- CSS STYLE -->
+	<style type="text/css">
+        /*取消所有盒子的默认边距*/
+		*{padding: 0;margin: 0;}
+		/*设置网页字体*/
+		body{font-family: Microsoft YaHei;}
+        /*取消ul中的样式*/
+        ul{list-style: none;}
+        /*取消a文本的下划线,和设置颜色*/
+        a{text-decoration: none;}
+        /*左浮动*/
+        .left{float: left;}
+        /*右浮动*/
+        .right{float: right;}
+        /*设置版心*/
+        .banxin{width: 1150px;margin: 0 auto;}
+
+        /*top右边区域*/
+        .top-1 li{
+        	float: left;
+            border: 1px solid #4CFF00; 
+            width: 90px;  
+            text-align: center;
+            margin-right: 10px;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #7FFF8E;
+            height: 30px;
+        }
+        .top-1 li:hover{
+        	background-color:#A0F27D;
+        }
+        .top-1 li p{line-height:30px;}
+        .top-1 li a{color: #282828;text-decoration: none;}
+        span.resou:hover{color: #FF0000;}
+        a.lianjie:hover{color: #FF0000;}
+        .touxiang:hover{
+            box-shadow: 0px 0px 8px gray;
+        }
+        .kk-1{
+        	background-color: pink;
+        }
+        .kk-1:hover{
+        	background-color: #7FFFFF;
+        }
+        
+        
+        /*照片展示*/
+        .poject-2 div.banxin ul li{
+        	float: left;
+        	border: 1px solid #D6D6D6;
+        	width: 180px;
+            margin-right:11.4px; 
+            height: 150px;
+            border-radius:4px; 
+        }
+        .poject-2 div.banxin ul li:hover{
+        	box-shadow: 0px 0px 5px gray;
+        }
+        .poject-2 div.banxin ul li img{
+        	width: 100%;
+        	height: 100%;
+        	border-radius: 4px;
+        }
+        /*动画---实现文职*/
+        @keyframes myfirst{
+        	0%{color:red;}
+        	100%{color: #57007F;}
+        }
+
+
+        /*关于我*/
+        ul.project-3 li.top_1{
+        	float: left;
+        }
+
+        /*生活资讯*/
+        table.table tr:hover{
+        	color: red;
+        }
+        li.hh-1 ul li{
+        	border-radius: 4px;
+        	margin-bottom:20px; 
+        }
+        li.hh-1 ul img {
+            border-radius: 4px;
+        }
+	</style>
+    
+    <!-- <CSS文件> -->
+	<link rel="stylesheet" type="text/css" href="BootStrap/bootstrap.min.css">
+</head>
+<body>
+	<!-- 头部，设置logo及头像 -->
+	<div style="background: url('img/gg2.jpg') no-repeat center;height: 500px;">
+		<!-- top边区-1 -->
+		<div class="banxin">
+            <!-- 左边 -->
+			<h1 class="left" style="height: 60px;padding:0px 12px;">
+				<img src="img/logo.png" style="width: 100%;height: 100%; ">
+			</h1>
+			<h2 class="left" style="height: 60px;line-height: 70px;color: #2D2D2D;">阿婷生活日志</h2>
+			
+			<!-- 右边 -->
+			<ul class="top-1 right" style="overflow:hidden;padding-top: 15px; ">
+				<li>
+					<p>
+						<a href="#">个人简介</a>
+					</p>
+				</li>
+				<li>
+					<p>
+						<a href="#">兴趣爱好</a>
+					</p>
+				</li>
+				<li>
+					<p>
+						<a href="#">时装生活</a>
+					</p>
+				</li>
+				<li>
+					<p>
+						<a href="#ff">照片墙</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 清除浮动样式 -->
+		<div style="clear:both;"></div>
+        
+        <!-- top边区-2 -->
+		<div class="banxin" style="padding-top:30px; ">
+			<div style="height: 80px;width: 80px;margin: 0 auto;border: 3px solid red;border-radius:50px;" class="touxiang">
+				<img src="img/头像.jpg" style="width: 100%;height: 100%;border-radius:50px;">
+			</div>
+			<p style="text-align: center;line-height: 50px;font-size: 12px;color: #111111;font-weight: 20px;">@梦婷心逸</p>
+		</div>
+        
+        <!-- 搜索框 -->
+		<div class="input-group banxin" style="width: 500px;">
+            <span class="input-group-addon" id="basic-addon1">搜索</span>
+            <input type="text" class="form-control" placeholder="User name" aria-describedby="basic-addon1" style="background: rgba(0,0,0,0.2);">
+        </div>
+        <!-- 热搜 -->
+        <div class="banxin" style="text-align: center;padding-top:5px;font-size: 12px;">
+        	<span class="resou">热门搜索 :</span>
+        	<span>
+        		<a href="#" class="lianjie">生活 ,</a>
+        		<a href="#" class="lianjie">娱乐 ,</a>
+        		<a href="#" class="lianjie">旅游 ,</a>
+        		<a href="#" class="lianjie">小吃 ,</a>
+        		<a href="#" class="lianjie">风景 </a>
+        	</span>
+        </div>
+	</div>
+
+    <!-- 文字滚动 -->
+    <marquee style="margin-top:15px;">
+    	<p style="color: #565656;animation:infinite myfirst 5s;font-size: 12px;">  
+    		@阿婷：我热爱生活,更热爱微笑。我爱旅行,更爱大自然.怎么去面对生活固然有千万种方式,但我会选择了微笑去面对。
+    	</p>
+    </marquee>
+    <!-- 照片展示 -->
+    <div style="margin-top:10px;" class="poject-2">
+    	<div class="banxin">
+    		<ul style="overflow: hidden;">
+    			<li>
+    				<img src="img/插图1.jpg" title="阿婷">
+    			</li>
+    			<li>
+    				<img src="img/插图2.jpg" title="阿婷">
+    			</li>
+    			<li>
+    				<img src="img/插图3.jpg" title="阿婷">
+    			</li>
+    			<li>
+    				<img src="img/插图4.jpg" title="阿婷">
+    			</li>
+    			<li>
+    				<img src="img/插图5.jpg" title="阿婷">
+    			</li>
+    			<li>
+    				<img src="img/插图6.jpg" title="阿婷">
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+     
+
+    <!-- 关于我 -->
+    <div>
+    	<div class="banxin">
+    		<div style="width: 50px;height: 40px;margin: 0 auto;">
+    			<img src="img/箭头1.png" style="width:100%;height: 100%;">
+    		</div>
+    		<!-- 大板块 -->
+    		<ul class=".project-3" style="overflow: hidden;">
+    			<!-- 左板块 -->
+    			<li style="width: 60%;float: left;" class="top_1" >
+    				<ul>
+    					<li style="text-indent: 250px;padding-bottom:15px;">
+    						<h1>About me</h1>
+    						<p style="line-height: 10px;color: #2B2B2B;font-size: 12px;">姓名：黄双婷</p>
+    						<p style="line-height: 10px;color: #2B2B2B;font-size: 12px;">年龄 :18</p>
+    						<p style="line-height: 10px;color: #2B2B2B;font-size: 12px;">技能 ：吃饭,睡觉,打豆豆</p>
+    					</li>
+    					<li>
+    						<span style="height:100px;float: left;width:50%;" class="kk-1"></span>
+    						<span >
+    						   <img src="img/技能.png" style="width:316px;height: 100px;">
+    						</span>
+    					</li>
+    					<div style="clear: both;"></div>
+    					<li style="text-indent: 250px;padding-top:10px;">
+    						<p style="line-height: 13px;font-size: 12px;">联系电话：17683738542</p>
+    						<p style="line-height: 13px;font-size: 12px;">email:13243253@qq.com</p>
+    						<p style="line-height: 13px;font-size: 12px;">地址 ： 中国</p>
+    						<p style="line-height: 13px;font-size: 12px;">爱好 ：职业爱笑玩家</p>
+    					</li>
+    				</ul>
+    			</li>
+    			<!-- 右板块 -->
+    			<li style="width: 40%;float: left;padding:30px 0px 0px 20px;">
+    				<img src="img/婷.jpg" style="width: 40%;height: 310px;box-shadow: -12px 9px 1px pink;">
+    			</li>
+    			<!-- 右下 -->
+    			<li style="width: 100%;margin-top:20px;float: left;">
+    				<img src="img/应用.png" style="width: 100%;">
+    			</li>
+    			<!-- <右下> -->
+    			<li style="width: 100%;margin-top:50px;float: left;" >
+    				<img src="img/箭头.png" style="float: right;width: 350px;">
+    				<h4 style="float: right;line-height: 30px;">生活资讯</h4>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+
+    <!-- 旅游资讯 -->
+    <div style="margin-top: 50px;">
+    	<div class="banxin" style="overflow: hidden;">
+    		<div style="width: 60%;float: left;border: 1px solid #D3D3D3;border-top-right-radius: 3px;border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;">
+    			<ul>
+    				<li style="width: 40%;float: left;">
+    					<img src="img/婷1.jpg" style="width: 100%;height: 150px;box-shadow: 5px 5px 1px pink;">
+    					<h3 style="text-align: center;background-color:pink; ">荆州.桃花村</h3>
+    				</li>
+    				<li style="width: 40%;float: right;border: 1px solid #FEB7B7;margin-top: 50px;font-size: 10px;border-radius:5px;margin-right:40px; ">
+    					<span>
+    						@梦婷心逸：<span>
+    							          躲在某一时间，想念一段时光的掌纹；躲在某一地点，想恋一个站在来路也站在去路的
+    							          ,然我牵挂的人。
+    					              </span>
+    				    </span>
+    				    <p style="padding-top:10px;">@梦婷心逸:
+                              <span>
+                              	  我知道，生活那不是童话，所以我不求童话般的结局，只是希望故事的主角：是我和你
+                              </span>
+    				    </p>
+    				    <p style="padding-top:10px;padding-bottom:20px; ">@梦婷心逸:
+                              <span>
+                              	  最难忘的是你的微笑，当它绽放在你的脸上时，我仿佛感到拂过一阵春风。暖融融的，把我的心
+                              	  给融化了。
+                              </span>
+    				    </p>
+    				</li>
+    				<li style="clear: both;"></li>
+    				<h2 style="text-align: center;background-color: #FECBAD;">照片墙</h2>
+    				<li style="width: 100%;margin-top:40px;" class="hh-1" name="ff">
+    					<marquee style="width: 100%;">
+    						<ul>
+    							<li class="left" style="width:150px;margin-right:20px;height: 140px;">
+    								<img src="img/婷14.jpg" style="width: 100%;height: 100%;">
+    							</li>
+    							<li class="left" style="width: 150px;height: 140px;margin-right:20px;">
+    								<img src="img/阿婷2.jpg" style="width: 100%;height: 100%;">
+    							</li>
+    							<li class="left" style="width: 150px;height: 140px;margin-right:20px;">
+    								<img src="img/婷3.jpg" style="width: 100%;height: 100%;">
+    							</li>
+    							<li class="left" style="width: 150px;height: 140px;margin-right:20px;">
+    								<img src="img/婷.jpg" style="width: 100%;height: 100%;">
+    							</li>
+    						</ul>
+    					</marquee>
+    				</li>
+    			</ul>
+    		</div>
+    		<div style="width: 35%;float: right;border: 1px solid #D3D3D3;margin-right: 15px;" class="hh-2">
+                <ul>
+                	<li style="width: 50%;padding-bottom:5px;background-color:#E8E8E8;float: left;">           		
+                		<img src="img/婷12.jpg" style="width: 100%;height: 100%;margin-bottom:10px; ">
+                		<p style="text-align: center;">友谊</p>
+                		<p style="text-align: center;line-height: 0;">滨江公园</p>
+                	</li>
+                	<li style="width: 40%;float: right;border-radius: 5px;overflow: hidden;">
+                		<img src="img/婷21.jpg" style="width: 100%;">
+                	</li>
+                	<li style="width: 40%;float: right;margin-top:10px;border-radius:100px;overflow: hidden;">
+                		<img src="img/婷5.jpg" style="width: 100%;">
+                	</li>
+                	<li style="clear: both;"></li>
+                	<p style="color: #808080;margin-top:48px;font-size: 11px;">
+                	@梦婷心逸：美丽的梦和美丽的诗一样，都是可遇而不可求的。我真喜欢那样的梦，明明知道你已为我跋涉千里，却又觉得芳草鲜美，好像你我才初次相逢！</p>
+                </ul>
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    	<!-- 表单 -->
+    	<div class="banxin" style="width: 1125px;;border-radius: 8px;margin-top: 50px; ">
+    		<div style="width: 100%;">
+    			<h4 style="margin: 0 auto;line-height: 50px;text-indent: 10px;background-color: #191919;border-top-left-radius:8px;border-top-right-radius:8px;color: #E0E0E0;">旅游咨询</h4>
+    			<table class="table">
+                   <tr style="border-bottom: 2px solid #808080;">
+                   	  <td>排名</td>
+                   	  <td>地区</td>
+                   	  <td>天气</td>
+                   	  <td>温度</td>
+                   	  <td>注意:</td>
+                   </tr>
+                   <tr>
+                   	  <td>1</td>
+                   	  <td>香格里拉</td>
+                   	  <td>晴</td>
+                   	  <td>20~25C</td>
+                   	  <td>适合</td>
+                   </tr>
+                   <tr>
+                   	  <td>2</td>
+                   	  <td>香港</td>
+                   	  <td>台风</td>
+                   	  <td>20~21C</td>
+                   	  <td>禁止</td>
+                   </tr>
+                   <tr>
+                   	  <td>3</td>
+                   	  <td>台湾</td>
+                   	  <td>小雨</td>
+                   	  <td>30~31C</td>
+                   	  <td>打伞</td>
+                   </tr>
+                   <tr>
+                   	  <td>4</td>
+                   	  <td>柬埔寨</td>
+                   	  <td>晴</td>
+                   	  <td>20~21C</td>
+                   	  <td>适合</td>
+                   </tr>
+                   <tr>
+                   	  <td>5</td>
+                   	  <td>澳洲</td>
+                   	  <td>晴</td>
+                   	  <td>20~27C</td>
+                   	  <td>适合</td>
+                   </tr>
+                   <tr>
+                   	  <td>6</td>
+                   	  <td>台州</td>
+                   	  <td>晴</td>
+                   	  <td>20~21C</td>
+                   	  <td>适合</td>
+                   </tr>
+                   <tr>
+                   	  <td>7</td>
+                   	  <td>奥尔良</td>
+                   	  <td>晴</td>
+                   	  <td>19~20C</td>
+                   	  <td>适合</td>
+                   </tr>
+                   <tr>
+                   	  <td>8</td>
+                   	  <td>新疆</td>
+                   	  <td>大雨</td>
+                   	  <td>19~29C</td>
+                   	  <td>注意:</td>
+                   </tr>
+                   <tr>
+                   	  <td>9</td>
+                   	  <td>湖南</td>
+                   	  <td>晴</td>
+                   	  <td>27~30C</td>
+                   	  <td>防晒</td>
+                   </tr>
+                   <tr>
+                   	  <td>10</td>
+                   	  <td>北京</td>
+                   	  <td>晴</td>
+                   	  <td>25~30C</td>
+                   	  <td>适合</td>
+                   </tr>
+                </table>
+    		</div>
+    	</div>
+    </div>
+    <div style="clear: both;"></div>
+    <div>
+    	<div class="banxin" style="width: 300px;">
+    		<nav aria-label="Page navigation">
+               <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                           <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                </ul>
+           </nav>
+    	</div>
+    </div>
+</body>
+</html>
